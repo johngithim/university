@@ -40,10 +40,7 @@ const BookCard = ({
 
           <Button
             //book-btn classname doesn't work!!!
-            className={cn(
-              "book-btn",
-              "book-overview_btn font-bebas-neue text-dark-100",
-            )}
+            className={"form-btn"}
           >
             Download receipt
           </Button>
