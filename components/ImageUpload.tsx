@@ -72,6 +72,7 @@ const ImageUpload = ({
         ref={ikUploadRef}
         onError={onError}
         onSuccess={onSuccess}
+        //THIS PART IS GOING TO BE DYNAMIC
         fileName={"test-upload.png"}
       />
 
@@ -94,7 +95,7 @@ const ImageUpload = ({
           className={"object-contain"}
         />
 
-        <p className={"text-base text-light-100"}>Upload a File</p>
+        <p className={"text-base text-light-100"}>Upload a file</p>
 
         {file && <p className={"upload-filename"}>{file.filePath}</p>}
       </button>
