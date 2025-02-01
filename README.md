@@ -40,3 +40,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # Drizzle done 2:22:14
 # now Up-stash 25238
 # user onboarding (workflow) 30652
+# send emails to new users
