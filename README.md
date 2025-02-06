@@ -36,10 +36,13 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 # Auth UI 
-# ImageKit 13643
+# ImageKit 
 # Drizzle done 
 # now Up-stash 
 # user onboarding (workflow) 
 # send emails to new users
 # admin page
-# file Upload 43411
+# file Upload 
+# color picker 
+# Create a book action 
+# Display the books to the HomePage 5:14:02
