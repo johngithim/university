@@ -29,10 +29,8 @@ const BookOverview = async ({
     .where(eq(users.id, userId))
     .limit(1);
 
-  if (!user) return null;
-
   const borrowingEligibility = {
-    isEligible: availableCopies > 0 && user.status === "APPROVED",
+    isEligible: availableCopies > 0 && user?.status === "APPROVED",
     message:
       availableCopies <= 0
         ? "Book is not available"
@@ -75,11 +73,13 @@ const BookOverview = async ({
 
         <p className={"book-description"}>{description}</p>
 
-        <BorrowBook
-          bookId={id}
-          userId={userId}
-          borrowingEligibility={borrowingEligibility}
-        />
+        {user && (
+          <BorrowBook
+            bookId={id}
+            userId={userId}
+            borrowingEligibility={borrowingEligibility}
+          />
+        )}
       </div>
 
       <div className={"relative flex flex-1 justify-center"}>
